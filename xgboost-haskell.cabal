@@ -33,7 +33,7 @@ Library
   extra-lib-dirs: /root/workspace/xgboost/build/dmlc-core,/root/workspace/xgboost/lib
   extra-include-dirs: /root/workspace/xgboost/build/dmlc-core/include,/root/workspace/xgboost/include
   -- See: https://stackoverflow.com/a/37643200
-  extra-libraries: stdc++, libdmlc, xgboost
+  extra-libraries: stdc++, dmlc, xgboost
 
 executable xgboost-app
   hs-source-dirs:      app
