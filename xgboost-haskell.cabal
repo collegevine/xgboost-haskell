@@ -28,12 +28,7 @@ Library
   build-depends:       base >= 4.7 && < 5
                      , foundation
   -- Linking approach: http://www.the-efficient-programmer.com/programming/link-c-lib-in-haskell.html#linking-to-the-c-library
-  cc-options: -fopenmp
-  ld-options: -fopenmp
-  extra-lib-dirs: /root/workspace/xgboost/build/dmlc-core,/root/workspace/xgboost/lib
-  extra-include-dirs: /root/workspace/xgboost/build/dmlc-core/include,/root/workspace/xgboost/include
-  -- See: https://stackoverflow.com/a/37643200
-  extra-libraries: stdc++, dmlc, xgboost
+  extra-libraries: xgboost
 
 executable xgboost-app
   hs-source-dirs:      app
