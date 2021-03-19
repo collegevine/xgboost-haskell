@@ -31,7 +31,7 @@ Library
   extra-lib-dirs: /root/workspace/xgboost/lib
   extra-include-dirs: /root/workspace/xgboost/include
   -- See: https://stackoverflow.com/a/37643200
-  extra-libraries: xgboost, stdc++
+  extra-libraries: xgboost, stdc++, libomp
 
 executable xgboost-app
   hs-source-dirs:      app
