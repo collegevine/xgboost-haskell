@@ -27,6 +27,10 @@ Library
                      , OverloadedStrings
   build-depends:       base >= 4.7 && < 5
                      , foundation
+  -- Linking approach: http://www.the-efficient-programmer.com/programming/link-c-lib-in-haskell.html#linking-to-the-c-library
+  extra-lib-dirs: /root/workspace/xgboost/lib
+  -- include-dirs: /root/workspace/xgboost/include
+  extra-libraries: xgboost
 
 executable xgboost-app
   hs-source-dirs:      app
